@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/device_id"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="130dp" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="186dp"
+        android:hint="Фамилия" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"
+        android:hint="Имя" />
+
+    <EditText
+        android:id="@+id/birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middle_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18sp"
+        android:hint="Дата рождения"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/middle_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"
+        android:hint="Отчество" />
+
+    <Button
+        android:id="@+id/btnMD5"
+        android:onClick="btnMD5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="214dp"
+        android:text="MD5" />
+
+    <TextView
+        android:id="@+id/md5_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp" />
+
+</RelativeLayout>
