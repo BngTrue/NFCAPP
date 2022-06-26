@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_recieved_key"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="47dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="92dp"
+        tools:text="123" />
+
+    <Button
+        android:id="@+id/bt_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="go_to_activity"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="150dp"
+        android:text="BLUETOOTH" />
+
+    <TextView
+        android:id="@+id/last_recieved_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Последний принятый ключ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/textout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="304dp"
+        android:gravity="center"
+        android:hint="Введите ключ для отправки"
+        android:inputType="number"
+        android:maxLength="16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/sendKeyWarning"
+        android:layout_width="382dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/textout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-2dp"
+        android:fontFamily="casual"
+        android:text="Введите ключ и преподнесите устройство к считывателю"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+</RelativeLayout>
